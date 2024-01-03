@@ -2,7 +2,7 @@ package logicjava;
 
 import java.util.Scanner;
 
-public class palndrome {
+public class palindrome {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String kata = input.next();
