@@ -52,6 +52,7 @@ public class pencarianFleksibel {
                 for (int i = 0; i < tampung.length; i++) {
                     if (pilih.equals(nama[tampung[i]]) || pilih.equals(intKeStr = String.valueOf(i + 1))) {
                         ambilAngka[1] = i;
+                        break;
                     }
                 }
                 if (pilih.equals(nama[tampung[ambilAngka[1]]])
@@ -60,6 +61,7 @@ public class pencarianFleksibel {
                         if (nama[i].equals(nama[tampung[ambilAngka[1]]])
                                 || pilih.equals(intKeStr = String.valueOf(i + 1))) {
                             ambilAngka[2] = i;
+                            break;
                         }
                     }
                     if (nama[ambilAngka[2]].equals(nama[tampung[ambilAngka[1]]])) {
@@ -69,6 +71,7 @@ public class pencarianFleksibel {
                     for (int i = 0; i < nama.length; i++) {
                         if (pilih.equals(intKeStr = String.valueOf(i + 1))) {
                             ambilAngka[3] = i;
+                            break;
                         }
                     }
                     if (pilih.equals(intKeStr = String.valueOf(ambilAngka[3] + 1))) {
