@@ -8,7 +8,7 @@ import java.util.*;
 public class grafikSederhana {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        ArrayList<Integer> angka = new ArrayList<>(List.of(5, 1, 3,2, 4, 5, 3, 2, 2));
+        ArrayList<Integer> angka = new ArrayList<>(List.of(5, 1, 3,2, 4, 5, 2, 2));
         int min = Collections.min(angka);
         int max = Collections.max(angka);
         char grafik[][] = new char[angka.size()][max - min + 1];
