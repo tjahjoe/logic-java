@@ -7,10 +7,10 @@ public class bilanganPrima {
         Scanner input = new Scanner(System.in);
         boolean kondisi = true;
         int angka = input.nextInt();
-        if (angka == 1) {
+        if (angka <= 1) {
             kondisi = false;
         } else {
-            for (int i = 2; i <= angka / 2; i++) {
+            for (int i = 2; i <= Math.sqrt(angka); i++) {
                 if (angka % i == 0) {
                     kondisi = false;
                     break;
