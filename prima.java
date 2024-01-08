@@ -8,20 +8,16 @@ public class prima {
         boolean kondisi = true;
         int angka = input.nextInt();
         for (int i = 2; i <= angka; i++) {
-            if (i == 2) {
+            for (int j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j == 0) {
+                    kondisi = false;
+                    break;
+                } else {
+                    kondisi = true;
+                }
+            }
+            if (kondisi) {
                 System.out.println(i);
-            } else {
-                for (int j = 2; j <= Math.sqrt(i); j++) {
-                    if (i % j == 0) {
-                        kondisi = false;
-                        break;
-                    } else {
-                        kondisi = true;
-                    }
-                }
-                if (kondisi) {
-                    System.out.println(i);
-                }
             }
         }
     }
