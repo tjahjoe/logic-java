@@ -7,8 +7,8 @@ public class fibonacci {
         for (int i = 0; i < 5; i++) {
             angka[1] = angka[0];
             angka[0] = angka[2] + angka[1];
-            System.out.println(angka[0]);
             angka[2] = angka[1];
+            System.out.println(angka[0]);
         }
         fungsiRekursif(0, 1, 8);
     }
