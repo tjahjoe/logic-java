@@ -1,4 +1,4 @@
-package LatihanUTSSem2;
+// package LatihanUTSSem2;
 
 public class MargeSort {
     Mahasiswa[] margeSort(Mahasiswa[] data) {

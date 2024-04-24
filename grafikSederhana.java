@@ -1,4 +1,4 @@
-package logicjava;
+// package logicjava;
 
 import java.util.ArrayList;
 import java.util.List;

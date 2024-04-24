@@ -1,4 +1,4 @@
-package LatihanUTSSem2;
+// package LatihanUTSSem2;
 
 import java.util.Scanner;
 

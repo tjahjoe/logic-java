@@ -2,9 +2,9 @@ import java.util.Arrays;
 
 public class margeSort {
     public static void main(String[] args) {
-        int ar[] = { 12, 20, 100, 8 };
-        System.out.println(Arrays.toString(mr(ar)));
-        // mr(ar);
+        int ar[] = { 12, 20, 1, 100, 8, 9, 80, 7};
+        System.out.println(Arrays.toString(ar));
+        mr(ar);
     }
 
     static int[] mr(int[] n) {
@@ -14,12 +14,12 @@ public class margeSort {
             for (int i = 0; i < a; i++) {
                 left[i] = n[i];
             }
-            mr(left);
+            mr(left);//memberhentikan rekursif
             int right[] = new int[n.length - a];
             for (int i = a, o = 0; i < n.length; i++, o++) {
                 right[o] = n[i];
             }
-            mr(right);
+            mr(right);//memberhentikan rekursif
             int l = 0;
             int r = 0;
             int i = 0;
@@ -41,9 +41,9 @@ public class margeSort {
                 }
                 i++;
             }
-
         }
         System.out.println(Arrays.toString(n));
         return n;
     }
 }
+//bisa di sederhanakan

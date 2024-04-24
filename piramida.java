@@ -1,7 +1,7 @@
 /**
  * piramida
  */
-package logicjava;
+// package logicjava;
 public class piramida {
 
     public static void main(String[] args) {
